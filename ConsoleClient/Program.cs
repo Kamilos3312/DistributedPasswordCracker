@@ -75,7 +75,7 @@ namespace ConsoleClient
                     Console.WriteLine("Fetching data for brute force...");
                     var prefix = client.GetBFNextPrefix();
                     var range = client.GetBFGenerationRange();
-                    if (range.Count() <= 0 || prefix.Trim() == "")
+                    if (range.Count() <= 0 || prefix.Trim() == "\0")
                     {
                         hashedPasswords.Clear();
                         break;
