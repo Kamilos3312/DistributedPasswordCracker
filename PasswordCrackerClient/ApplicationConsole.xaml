@@ -1,0 +1,35 @@
+﻿<Page x:Class="PasswordCrackerClient.ApplicationConsole"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PasswordCrackerClient"
+      mc:Ignorable="d" 
+      d:DesignHeight="640" d:DesignWidth="480" Title="PasswordCracker Client"
+      Loaded="WindowLauncher">
+
+    <Grid Background="White">
+        <TextBlock TextWrapping="Wrap" Text="Application console" TextAlignment="Center" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0" />
+
+        <TextBlock TextWrapping="Wrap" Text="Passwords to crack" TextAlignment="Center" FontSize="11" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,50,0,0" />
+        <ListBox Name="passwordsToCrack" Width="400" Height="100" Margin="0,70,0,0" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="IsEnabled" Value="False"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+        </ListBox>
+
+        <TextBlock TextWrapping="Wrap" Text="Client console" TextAlignment="Center" FontSize="11" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,200,0,0" />
+        <ListBox Name="consoleLog" Width="400" Height="250" Margin="0,220,0,0" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="IsEnabled" Value="False"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+        </ListBox>
+
+        <Button Name="btnDisconnect" Content="Disconnect" Margin="0,0,0,100" HorizontalAlignment="Center" VerticalAlignment="Bottom" Padding="50 10" Click="btnDisconnect_Click"/>
+        <Button Name="btnBack" Content="Back" IsEnabled="False" Margin="0,0,0,10" HorizontalAlignment="Center" VerticalAlignment="Bottom" Padding="20 2" Click="btnBack_Click"/>
+    </Grid>
+</Page>

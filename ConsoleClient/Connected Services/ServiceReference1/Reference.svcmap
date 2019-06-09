@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f0535fd3-cb48-4af0-b726-4a36f9ad6b8d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8000/PasswordCracker/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Cracker.wsdl" MetadataType="Wsdl" ID="adbb5b8e-fe66-4e01-8231-40b969fb1d77" SourceId="1" SourceUrl="http://localhost:8000/PasswordCracker/?wsdl" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="d29d657d-df34-42ff-9bad-9ccdfa7a3587" SourceId="1" SourceUrl="http://localhost:8000/PasswordCracker/?disco" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="a315ae62-eddf-4f76-a356-96ea53660464" SourceId="1" SourceUrl="http://localhost:8000/PasswordCracker/?xsd=xsd0" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="e40aae72-bbfc-4be6-ae09-1f3424a3765a" SourceId="1" SourceUrl="http://localhost:8000/PasswordCracker/?xsd=xsd3" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="1f9e6112-1c11-4646-9f00-17bd45b4633e" SourceId="1" SourceUrl="http://localhost:8000/PasswordCracker/?xsd=xsd1" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="bd0d0afe-5df3-417a-8586-779ec1188d81" SourceId="1" SourceUrl="http://localhost:8000/PasswordCracker/?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
